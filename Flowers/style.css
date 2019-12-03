@@ -1,0 +1,162 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 27px;
+	color: #ffffff;
+	text-transform: uppercase;
+	
+	background-color: #192327;
+	
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+	list-style: none;
+}
+h2{
+	font-size: 25px;
+	text-align: center;
+	
+}
+.hidden {
+	display: none;
+}
+
+.navigation,
+.work_in_numbers,
+.footer_menu {
+	font-size: 17px;
+	line-height: 27px;
+	list-style: none;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+	background-color: #d8d02e;
+	color: #192327;
+}
+
+.footer_menu a:hover,
+.footer_menu a:focus {
+	color: #2e3748;
+}
+
+.visiting_card_page {
+	text-align: center;
+	font-size: 20px;
+}
+.visiting_card_page h1{
+	font-size: 44px;
+}
+
+.visiting_card_page span {
+	color: #d8d02e;
+	font-size: 30px;
+}
+div.visiting_card_page {
+	background: #2e3748 url(succulent-1031033_1920.svg) no-repeat;
+	background-size: cover;
+}
+p.info_page {
+	line-height: 35px;
+}
+.work_in_numbers li {
+	line-height: 24px;
+}
+
+.white_background {
+	background-color: #d4d7d8;
+	color: #192327;
+	font-size: 43px;
+}
+.feed_back {
+	background: #2e3748 url(succulent-1031033_1920.svg) no-repeat;
+}
+
+.feed_back_heading {
+	font-size: 44px;
+	text-align: center;
+		
+}
+
+.feed_back_text {
+	font-size: 25px;
+	line-height: 40px;
+	color: #d8d02e;
+	text-align: center;
+}
+
+button {
+	font: inherit;
+	text-align: center;
+	background-color: #d8d02e;
+	vertical-align: middle;
+	border: none;
+	border-radius: 5px;
+}
+
+button:hover,
+button:focus,
+button:active {
+	background-color: #192327;
+	color: #ffffff;
+}
+input {
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	border-bottom: 4px solid #ffffff;
+	color: #ffffff;
+}
+input:focus{
+	border-color: #d8d02e;
+}
+
+
+input::placeholder { 
+	color: #ffffff;
+}
+
+/*сетка*/
+header {
+	margin: 0px;
+	padding: 0px;	
+}
+.navigation {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.container_navigation {
+	width: 100%;
+}
+.visiting_card_page h1 {
+	padding-top: 310px;
+	
+}
+
+.visiting_card_page p {
+	padding-bottom: 295px;
+}
+.center_column {
+	display: flex;
+	justify-content:  center;
+}
+.container {
+	width: 415px;
+}
+.two_columns {
+	display: flex;
+	justify-content: center;
+}
+/*.right_column img {
+	width: 840px;
+	height: auto;
+}*/
+.left_column {
+	width: 520px;
+}
