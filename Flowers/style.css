@@ -1,4 +1,5 @@
 body {
+	min-width: 400px;
 	margin: 0px;
 	padding: 0px;
 	
@@ -10,6 +11,10 @@ body {
 	
 	background-color: #192327;
 	
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 a {
 	color: #ffffff;
@@ -74,6 +79,7 @@ p.info_page {
 }
 .feed_back {
 	background: #2e3748 url(succulent-1031033_1920.svg) no-repeat;
+	background-size: cover;
 }
 
 .feed_back_heading {
@@ -130,28 +136,37 @@ header {
 	padding: 0px;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .container_navigation {
 	width: 100%;
 }
-.visiting_card_page h1 {
+/* попробовала сделать размер контейнера */
+.visiting_card_page{
 	padding-top: 310px;
-	
-}
-
-.visiting_card_page p {
 	padding-bottom: 295px;
+	margin-bottom: 190px;
+}
+/* .visiting_card_page h1 {
+	padding-top: 310px;
+}
+.visiting_card_page p {
+	padding-bottom: 295px; */
 }
 .center_column {
 	display: flex;
 	justify-content:  center;
+	flex-wrap: wrap;
 }
 .container {
 	width: 415px;
+	margin: 0 auto;
+	margin-bottom: 190px;
 }
 .two_columns {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 /*.right_column img {
 	width: 840px;
@@ -159,4 +174,14 @@ header {
 }*/
 .left_column {
 	width: 520px;
+}
+
+.adventages {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.box{
+	display: flex;
+	flex-wrap: wrap;
 }
