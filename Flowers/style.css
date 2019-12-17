@@ -1,3 +1,4 @@
+/* глобальные параметры */
 body {
 	min-width: 400px;
 	margin: 0px;
@@ -44,6 +45,7 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/* базовая стилизация */
 
 .navigation,
 .work_in_numbers,
@@ -76,9 +78,11 @@ input[type="radio"].visually-hidden {
 	color: #d8d02e;
 	font-size: 50px;
 }
-div.visiting_card_page {
+div.visiting_card_page {	
+	background-color: rgba(25, 35, 39, 0.8);
 	background: #2e3748 url(succulent-1031033_1920.svg) no-repeat;
 	background-size: cover;
+
 }
 p.info_page {
 	line-height: 50px;
@@ -97,6 +101,7 @@ p.info_page {
 	padding-top: 260px;
 	padding-bottom: 90px;
 	background: #2e3748 url(succulent-1031033_1920.svg) no-repeat;
+	opacity: 1;
 	background-size: cover;
 }
 
@@ -157,6 +162,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	
 }
 .container_navigation {
 	width: 100%;
@@ -166,13 +172,14 @@ header {
 	padding-top: 475px;
 	padding-bottom: 450px;
 	margin-bottom: 115px;
+	position: relative;
 }
 /* .visiting_card_page h1 {
 	padding-top: 310px;
 }
 .visiting_card_page p {
-	padding-bottom: 295px; */
-}
+	padding-bottom: 295px; 
+}*/
 .center_column {
 	display: flex;
 	justify-content:  center;
@@ -185,9 +192,12 @@ header {
 }
 .two_columns {
 	display: flex;
-	justify-content: center;
+	max-width: 1500px;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*.right_column img {
 	width: 840px;
@@ -253,3 +263,51 @@ footer {
 .footer_menu {
 	margin-right: 100px;
 }
+
+/* заканчиваем стилизацию */
+
+.col_nav a,
+li.col_tel {
+	display: block;
+	padding: 80px 60px;
+}
+
+.visiting_card_page::before,
+.visiting_card_page::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+
+	background: url(triangle.png);
+	
+	width: 100%;
+	height: 53px;
+}
+.visiting_card_page::before{
+	top: 2px;
+}
+.visiting_card_page::after {
+	bottom: 1px;
+	background-position: 0 -53px;
+}
+
+.work_in_numbers li {
+	min-height: 120px;
+	width: 370px;
+	padding-left: 110px;
+}
+
+ul.work_in_numbers {
+	position: relative;
+}
+
+.work_in_numbers li::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: center;
+
+	background: red;
+	
+	width: 100px;
+	height: 110px;
