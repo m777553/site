@@ -292,22 +292,106 @@ li.col_tel {
 }
 
 .work_in_numbers li {
-	min-height: 120px;
+	min-height: 160px;
 	width: 370px;
-	padding-left: 110px;
+	padding-left: 175px;
 }
 
 ul.work_in_numbers {
 	position: relative;
 }
 
-.work_in_numbers li::before {
+.work_in_numbers li:first-child::before {
 	content: "";
 	position: absolute;
 	left: 0px;
-	top: center;
+	top: -15px;
+
+	background: url('in numbers.png');
+	
+	width: 176px;
+	height: 130px;
+}
+.work_in_numbers li:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 130px;
+
+	background: url('in numbers.png');
+	background-position: 0 -130px;
+	
+	width: 176px;
+	height: 130px;
+}
+.work_in_numbers li:nth-child(3)::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 270px;
+
+	background: url('in numbers.png');
+	background-position: -176px 0px;
+	
+	width: 176px;
+	height: 130px;
+}
+
+.work_in_numbers li:last-child::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 415px;
+
+	background: url('in numbers.png');
+	background-position: -176px -130px;
+	
+	width: 176px;
+	height: 130px;
+}
+
+/* .work_in_numbers li:first-child::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: -15px;
 
 	background: red;
 	
 	width: 100px;
 	height: 110px;
+}
+.work_in_numbers li:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 100px;
+
+	background: url();
+	
+	width: 100px;
+	height: 110px;
+}
+.work_in_numbers li:nth-child(3)::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 210px;
+
+	background: yellow;
+	
+	width: 100px;
+	height: 110px;
+}
+
+.work_in_numbers li:last-child::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 320px;
+
+	background: green;
+	
+	width: 100px;
+	height: 110px;
+} */
